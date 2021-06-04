@@ -51,6 +51,9 @@ const userSlice = createSlice({
       state.user.isLoggedIn = true;
       state.user.userDetails = action.payload;
     },
+    signOut(state,action){
+      state.user.isLoggedIn = false;
+    }
 
 
   },
@@ -79,7 +82,7 @@ const userSlice = createSlice({
 
 })
 
-export const {  setUser } = userSlice.actions
+export const {  setUser, signOut } = userSlice.actions
 
 export default userSlice.reducer
 

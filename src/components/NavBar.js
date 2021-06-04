@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button"
 
 import {Link } from 'react-router-dom';
 
-import {logout} from '../reducers/userSlice'
+import {logout , signOut} from '../reducers/userSlice'
 import {clearData} from '../reducers/dataSlice'
 import {useDispatch} from 'react-redux'
 
@@ -21,6 +21,8 @@ const NavBar = () => {
 
     const handleLogOut = () =>{
         dispatch(clearData());
+        dispatch(signOut())
+    
         dispatch(logout());
     }
 
