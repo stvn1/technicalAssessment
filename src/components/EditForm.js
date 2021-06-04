@@ -194,7 +194,7 @@ const EditForm = (props) => {
                 <Grid container justify="space-around">
                     <KeyboardDatePicker
                     margin="normal"
-                    label="Lab Collection Date"
+                    label="Symptom Onset Date"
                     format="dd MMM yyyy"
                     value={date2}
                     onChange={handleDateChange2}
